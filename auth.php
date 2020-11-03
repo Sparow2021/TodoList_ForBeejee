@@ -3,7 +3,7 @@ require_once 'process.php';
 ?>
 <html>
     <head>
-        <title>Authorization</title>
+        <title>Авторизация</title>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -28,31 +28,31 @@ endif;
 ?>
  
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">TaskBook</a>
+            <a class="navbar-brand" href="#">DO IT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://github.com/Sparow2021">Application code github<span class="sr-only">(current)</span></a>
+                        <!-- <a class="nav-link" href="https://github.com/Sparow2021">Github code<span class="sr-only">(current)</span></a> -->
                     </li>
                 </ul>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button"><a style="color: white !important; text-decoration:none;" href="index.php">Home Page</a></button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button"><a style="color: white !important; text-decoration:none;" href="index.php">Главная</a></button>
             </div>
     </nav>      
         
  <div class="container" style="margin-top:20px;"> 
     <form action="process.php" method="POST">
     <div class="form-group">
-        <label for="exampleInputLogin">Login</label>
-        <input type="text" class="form-control" id="exampleInputLogin"  placeholder="Enter login" name="auth_login">
+        <label for="exampleInputLogin">Логин</label>
+        <input type="text" class="form-control" id="exampleInputLogin"  placeholder="Введите логин" name="auth_login">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="auth_password">
+        <label for="exampleInputPassword1">Пароль</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль" name="auth_password">
     </div>
-    <button type="submit" class="btn btn-primary" name="auth">Submit</button>
+    <button type="submit" class="btn btn-primary" name="auth">Подтвердить</button>
     </form>
 </div>
 </body>
